@@ -13,6 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const sectionBtns = document.querySelectorAll(".section-btn")
   const sections = document.querySelectorAll(".section")
 
+   // Add logo click event to navigate to home
+  const logo = document.getElementById("logo-home");
+  if (logo) {
+    logo.addEventListener("click", () => {
+      showSection("home");
+    });
+  } 
   // mostrar seccion
   function showSection(sectionId) {
     // ocultar todas las secciones

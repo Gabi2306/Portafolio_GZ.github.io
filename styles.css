@@ -137,6 +137,11 @@
     font-weight: 700;
     color: var(--primary-color);
     cursor: pointer;
+    transition: var(--transition);
+  }
+
+  .logo:hover {
+    transform: scale(1.05);
   }
   
   .nav-links {
