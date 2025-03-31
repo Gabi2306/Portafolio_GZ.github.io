@@ -13,45 +13,45 @@ document.addEventListener("DOMContentLoaded", () => {
   const sectionBtns = document.querySelectorAll(".section-btn")
   const sections = document.querySelectorAll(".section")
 
-   // Add logo click event to navigate to home
-  const logo = document.getElementById("logo-home");
+  // Add logo click event to navigate to home
+  const logo = document.getElementById("logo-home")
   if (logo) {
     logo.addEventListener("click", () => {
-      showSection("home");
-    });
-  } 
+      showSection("home")
+    })
+  }
   // mostrar seccion
   function showSection(sectionId) {
     // ocultar todas las secciones
-    sections.forEach(section => {
+    sections.forEach((section) => {
       section.classList.remove("active")
     })
-    
+
     // mostrar seccion seleccionada
     document.getElementById(sectionId).classList.add("active")
-    
+
     // actualizar nav items
-    navItems.forEach(item => {
+    navItems.forEach((item) => {
       if (item.getAttribute("data-section") === sectionId) {
         item.classList.add("active")
       } else {
         item.classList.remove("active")
       }
     })
-    
+
     // cerrar menu de movil si esta abierto
     hamburger.classList.remove("active")
     navLinks.classList.remove("active")
-    
+
     // scroll hasta arriba
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     })
   }
 
   // añadir click a los items del nav
-  navItems.forEach(item => {
+  navItems.forEach((item) => {
     item.addEventListener("click", (e) => {
       e.preventDefault()
       const sectionId = item.getAttribute("data-section")
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   // Añadir click a los botones de seccion
-  sectionBtns.forEach(btn => {
+  sectionBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault()
       const sectionId = btn.getAttribute("data-section")
@@ -81,8 +81,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const message = document.getElementById("message").value
 
       // crear link de email
-      const mailtoLink = `mailto:zabaletahortag@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`
-      
+      const mailtoLink = `mailto:zabaletahortag@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}
+Email: ${email}
+
+${message}`)}`
+
       // abrir email del cilente
       window.location.href = mailtoLink
 
@@ -122,3 +125,4 @@ document.addEventListener("DOMContentLoaded", () => {
   // correr animacion al cargar la pagina
   animateOnScroll()
 })
+

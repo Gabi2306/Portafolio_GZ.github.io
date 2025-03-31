@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +10,38 @@
 <body>
     <header>
         <div class="logo" id="logo-home">GZ</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#" class="nav-item active" data-section="home">Inicio</a></li>
-                <li><a href="#" class="nav-item" data-section="about">Sobre mi</a></li>
-                <li><a href="#" class="nav-item" data-section="skills">Habilidades</a></li>
-                <li><a href="#" class="nav-item" data-section="projects">Projectos</a></li>
-                <li><a href="#" class="nav-item" data-section="contact">Contacto</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+        <div class="nav-container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-item active" data-section="home" data-i18n="nav-home">Inicio</a></li>
+                    <li><a href="#" class="nav-item" data-section="about" data-i18n="nav-about">Sobre mi</a></li>
+                    <li><a href="#" class="nav-item" data-section="skills" data-i18n="nav-skills">Habilidades</a></li>
+                    <li><a href="#" class="nav-item" data-section="projects" data-i18n="nav-projects">Projectos</a></li>
+                    <li><a href="#" class="nav-item" data-section="contact" data-i18n="nav-contact">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button id="lang-es" class="language-option active" data-i18n="language-spanish">Español</button>
+                <button id="lang-en" class="language-option" data-i18n="language-english">Inglés</button>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
         <section id="home" class="section active">
             <div class="hero">
                 <div class="hero-content">
-                    <h1>Hola, soy <span>Gabriela Zabaleta</span></h1>
-                    <p>Estudiante y Programadora junior</p>
+                    <h1 data-i18n="hero-title">Hola, soy <span>Gabriela Zabaleta</span></h1>
+                    <p data-i18n="hero-subtitle">Estudiante y Programadora junior</p>
                     <div class="hero-buttons">
-                        <a href="#" class="btn primary-btn section-btn" data-section="projects">Mira mi trabajo</a>
-                        <a href="#" class="btn secondary-btn section-btn" data-section="contact">Contactame</a>
+                        <a href="#" class="btn primary-btn section-btn" data-section="projects" data-i18n="hero-btn-work">Mira mi trabajo</a>
+                        <a href="#" class="btn secondary-btn section-btn" data-section="contact" data-i18n="hero-btn-contact">Contactame</a>
                     </div>
                 </div>
             </div>
@@ -42,7 +49,7 @@
 
         <section id="about" class="section">
             <div class="section-header">
-                <h2>Sobre mi</h2>
+                <h2 data-i18n="about-title">Sobre mi</h2>
                 <div class="underline"></div>
             </div>
             <div class="about-content">
@@ -50,17 +57,17 @@
                     <img src="./portrait_2.jpg" alt="Gabriela Zabaleta">
                 </div>
                 <div class="about-text">
-                    <h3>Estudiante & Programadora</h3>
-                    <p>¡Hola! Soy Gabriela Zabaleta, una persona apasionada por el desarrollo de software. Actualmente, estoy explorando el mundo de la ciencia de datos, con ganas de crecer y mejorar mis habilidades.</p>
-                    <p>Me entusiasma resolver problemas a través de la tecnología y expandir continuamente mi conocimiento en diversas herramientas y lenguajes de programación. Creo en el poder de la innovación para generar un impacto significativo.</p>
+                    <h3 data-i18n="about-subtitle">Estudiante & Programadora</h3>
+                    <p data-i18n="about-p1">¡Hola! Soy Gabriela Zabaleta, una persona a la que le apasiona el desarrollo de software. Actualmente, estoy explorando el mundo de la ciencia de datos, con la intención de crecer y mejorar mis habilidades.</p>
+                    <p data-i18n="about-p2">Me entusiasma resolver problemas a través de la tecnología y expandir continuamente mi conocimiento en diversas herramientas y lenguajes de programación. Creo en el poder de la innovación para generar un impacto significativo.</p>
                     <div class="about-details">
                         <div class="detail">
                             <i class="fas fa-graduation-cap"></i>
-                            <span>Estudiante de Ingenieria de software</span>
+                            <span data-i18n="about-detail1">Estudiante de Ingenieria de software</span>
                         </div>
                         <div class="detail">
                             <i class="fas fa-code"></i>
-                            <span>Aspirante a programador Backend</span>
+                            <span data-i18n="about-detail2">Aspirante a programador Backend</span>
                         </div>
                     </div>
                 </div>
@@ -69,12 +76,12 @@
 
         <section id="skills" class="section">
             <div class="section-header">
-                <h2>Mis habilidades</h2>
+                <h2 data-i18n="skills-title">Mis habilidades</h2>
                 <div class="underline"></div>
             </div>
             <div class="skills-content">
                 <div class="skill-category">
-                    <h3>Lenguajes de programación</h3>
+                    <h3 data-i18n="skills-cat1">Lenguajes de programación</h3>
                     <div class="skills-grid">
                         <div class="skill-card">
                             <div class="skill-icon">
@@ -101,7 +108,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>desarrollo Web</h3>
+                    <h3 data-i18n="skills-cat2">desarrollo Web</h3>
                     <div class="skills-grid">
                         <div class="skill-card">
                             <div class="skill-icon">
@@ -128,7 +135,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>herramientas & tecnologías</h3>
+                    <h3 data-i18n="skills-cat3">herramientas & tecnologías</h3>
                     <div class="skills-grid">
                         <div class="skill-card">
                             <div class="skill-icon">
@@ -159,27 +166,27 @@
 
         <section id="projects" class="section">
             <div class="section-header">
-                <h2>Mis Projectos</h2>
+                <h2 data-i18n="projects-title">Mis Projectos</h2>
                 <div class="underline"></div>
             </div>
             <div class="projects-content">
-                <p class="projects-intro">Aquí están algunos de los proyectos en los que he estado trabajando. Como estoy comenzando mi camino en la programación, sigo agregando nuevos proyectos a mi portafolio.</p>
+                <p class="projects-intro" data-i18n="projects-intro">Aquí están algunos de los proyectos en los que he estado trabajando. Como estoy comenzando mi camino en la programación, sigo agregando nuevos proyectos a mi portafolio.</p>
                 <div class="projects-grid">
                     <div class="project-card">
                         <div class="project-image">
                             <img src="./imagen_portafolio.jpg" alt="Project 1">
                         </div>
                         <div class="project-info">
-                            <h3>Portafolio personal</h3>
-                            <p>Un portafolio personal construido con HTML, CSS y JavaScript.</p>
+                            <h3 data-i18n="project1-title">Portafolio personal</h3>
+                            <p data-i18n="project1-desc">Un portafolio personal construido con HTML, CSS y JavaScript.</p>
                             <div class="project-tags">
                                 <span>HTML</span>
                                 <span>CSS</span>
                                 <span>JavaScript</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://gabi2306.github.io/Portafolio_GZ.github.io/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                                <a href="https://github.com/Gabi2306/Portafolio_GZ.github.io.git" target="_blank" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                                <a href="https://gabi2306.github.io/Portafolio_GZ.github.io/" target="_blank" class="project-link" data-i18n="live-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="https://github.com/Gabi2306/Portafolio_GZ.github.io.git" target="_blank" class="project-link" data-i18n="source-code"><i class="fab fa-github"></i> Source Code</a>
                             </div>
                         </div>
                     </div>
@@ -188,16 +195,70 @@
                             <img src="./calculadora.jpg" alt="Project 2">
                         </div>
                         <div class="project-info">
-                            <h3>Calculadora Phyton</h3>
-                            <p>Una calculadora simple construida con Python y Tkinter.</p>
+                            <h3 data-i18n="project2-title">Calculadora Phyton</h3>
+                            <p data-i18n="project2-desc">Una calculadora simple construida con Python y Tkinter.</p>
                             <div class="project-tags">
                                 <span>HTML</span>
                                 <span>CSS</span>
                                 <span>JavaScript</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://gabi2306.github.io/Calculadora.github.io/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                                <a href="https://github.com/Gabi2306/Calculadora.github.io.git" target="_blank" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                                <a href="https://gabi2306.github.io/Calculadora.github.io/" target="_blank" class="project-link" data-i18n="live-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="https://github.com/Gabi2306/Calculadora.github.io.git" target="_blank" class="project-link" data-i18n="source-code"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=200&width=350" alt="Project 3">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="project4-title">Aplicación del Clima</h3>
+                            <p data-i18n="project4-desc">Una aplicación meteorológica que muestra las condiciones actuales y pronósticos.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>API</span>
+                                <span>CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link" data-i18n="live-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" target="_blank" class="project-link" data-i18n="source-code"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=200&width=350" alt="Project 4">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="project5-title">Gestor de Tareas</h3>
+                            <p data-i18n="project5-desc">Una aplicación simple de gestión de tareas para organizar tus actividades diarias.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link" data-i18n="live-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" target="_blank" class="project-link" data-i18n="source-code"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=200&width=350" alt="Project 5">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="project6-title">Tienda en Línea</h3>
+                            <p data-i18n="project6-desc">Una tienda online con listados de productos y funcionalidad de carrito de compras.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link" data-i18n="live-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" target="_blank" class="project-link" data-i18n="source-code"><i class="fab fa-github"></i> Source Code</a>
                             </div>
                         </div>
                     </div>
@@ -205,12 +266,12 @@
                         <div class="project-image">
                             <img src="./loading.jpg" alt="Coming Soon">
                             <div class="coming-soon-overlay">
-                                <span>Mas Proximamente</span>
+                                <span data-i18n="coming-soon">Mas Proximamente</span>
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3>Projectos futuros</h3>
-                            <p>Mas proyectos en el futuro!</p>
+                            <h3 data-i18n="project3-title">Projectos futuros</h3>
+                            <p data-i18n="project3-desc">Mas proyectos en el futuro!</p>
                             <div class="project-tags">
                                 <span>JavaScript</span>
                                 <span>HTML</span>
@@ -224,17 +285,17 @@
 
         <section id="contact" class="section">
             <div class="section-header">
-                <h2>Contactame</h2>
+                <h2 data-i18n="contact-title">Contactame</h2>
                 <div class="underline"></div>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Informacion de contacto</h3>
-                    <p>No dudes en contactarme para colaborar, hacer preguntas o simplemente saludar!</p>
+                    <h3 data-i18n="contact-subtitle">Informacion de contacto</h3>
+                    <p data-i18n="contact-p">No dudes en contactarme para colaborar, hacer preguntas o simplemente saludar!</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>zabaletahortag@gmail.com</span>
+                            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3d475c5f5c5158495c55524f495c5a7d5a505c5451135e5250">[zabaletahortag@gmail.com]</a></span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
@@ -252,25 +313,25 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <h3>Enviame un correo</h3>
+                    <h3 data-i18n="contact-form-title">Enviame un correo</h3>
                     <form id="contactForm">
                         <div class="form-group">
-                            <label for="name">Nombre</label>
+                            <label for="name" data-i18n="contact-name">Nombre</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email" data-i18n="contact-email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject">Asunto</label>
+                            <label for="subject" data-i18n="contact-subject">Asunto</label>
                             <input type="text" id="subject" name="subject" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Mensaje</label>
+                            <label for="message" data-i18n="contact-message">Mensaje</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn primary-btn">Enviar correo</button>
+                        <button type="submit" class="btn primary-btn" data-i18n="contact-send">Enviar correo</button>
                     </form>
                 </div>
             </div>
@@ -280,18 +341,13 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">GZ</div>
-            <p>&copy; 2025 Gabriela Zabaleta. All Rights Reserved.</p>
-            <div class="footer-links">
-                <a href="#" class="section-btn" data-section="home">Inicio</a>
-                <a href="#" class="section-btn" data-section="about">Sobre mi</a>
-                <a href="#" class="section-btn" data-section="skills">Habilidades</a>
-                <a href="#" class="section-btn" data-section="projects">Projectos</a>
-                <a href="#" class="section-btn" data-section="contact">Contacto</a>
-            </div>
+            <p data-i18n="footer-copyright">&copy; 2025 Gabriela Zabaleta. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="script.js"></script>
+    <script src="language-switcher.js"></script>
 </body>
 </html>
 
