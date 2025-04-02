@@ -76,7 +76,7 @@ if (typeof window.portfolioTranslations === "undefined") {
         "nav-home": "Inicio",
         "nav-about": "Sobre mi",
         "nav-skills": "Habilidades",
-        "nav-projects": "Projectos",
+        "nav-projects": "Proysectos",
         "nav-contact": "Contacto",
   
         // Hero section
@@ -102,14 +102,14 @@ if (typeof window.portfolioTranslations === "undefined") {
         "skills-cat3": "herramientas & tecnologías",
   
         // Projects section
-        "projects-title": "Mis Projectos",
+        "projects-title": "Mis Proyectos",
         "projects-intro":
           "Aquí están algunos de los proyectos en los que he estado trabajando. Como estoy comenzando mi camino en la programación, sigo agregando nuevos proyectos a mi portafolio.",
         "project1-title": "Portafolio personal",
         "project1-desc": "Un portafolio personal construido con HTML, CSS y JavaScript.",
         "project2-title": "Calculadora Phyton",
         "project2-desc": "Una calculadora simple construida con Python y Tkinter.",
-        "project3-title": "Projectos futuros",
+        "project3-title": "Proyectos futuros",
         "project3-desc": "Mas proyectos en el futuro!",
         "project4-title": "Aplicación del Clima",
         "project4-desc": "Una aplicación meteorológica que muestra las condiciones actuales y pronósticos.",
@@ -258,7 +258,7 @@ if (typeof window.portfolioTranslations === "undefined") {
           "nav-home": "Inicio",
           "nav-about": "Sobre mi",
           "nav-skills": "Habilidades",
-          "nav-projects": "Projectos",
+          "nav-projects": "Proyectos",
           "nav-contact": "Contacto",
   
           // Hero section
@@ -284,14 +284,14 @@ if (typeof window.portfolioTranslations === "undefined") {
           "skills-cat3": "herramientas & tecnologías",
   
           // Projects section
-          "projects-title": "Mis Projectos",
+          "projects-title": "Mis Proyectos",
           "projects-intro":
             "Aquí están algunos de los proyectos en los que he estado trabajando. Como estoy comenzando mi camino en la programación, sigo agregando nuevos proyectos a mi portafolio.",
           "project1-title": "Portafolio personal",
           "project1-desc": "Un portafolio personal construido con HTML, CSS y JavaScript.",
           "project2-title": "Calculadora Phyton",
           "project2-desc": "Una calculadora simple construida con Python y Tkinter.",
-          "project3-title": "Projectos futuros",
+          "project3-title": "Proyectos futuros",
           "project3-desc": "Mas proyectos en el futuro!",
           "project4-title": "Aplicación del Clima",
           "project4-desc": "Una aplicación meteorológica que muestra las condiciones actuales y pronósticos.",
